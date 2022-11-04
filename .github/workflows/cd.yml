@@ -19,7 +19,10 @@ jobs:
             USER_NAME : ${{ secrets.USER_NAME  }}
 
         run: |
-           ssh -i ${{ secrets.AWS_PRIVATE_KEY  }} ${USER_NAME}@${HOSTNAME} '
-               cd /home &&
-               git clone https://github.com/agiratech-mahesh/sahins.git
-            '
+          echo "$PRIVATE_KEY" > private_key && chmod 400 private_key
+          ssh -o StrictHostKeyChecking=no -i private_key ${USER_NAME}@${HOSTNAME} '
+          
+            #Now we have got the access of EC2 and we will start the deploy .
+            cd /home/ubuntu/ &&
+            git clone https://github.com/agiratech-mahesh/sahins.git
+            ' 
