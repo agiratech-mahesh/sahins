@@ -19,7 +19,6 @@ jobs:
             USER_NAME : ${{ secrets.USER_NAME  }}
 
         run: |
-           echo "$PRIVATE_KEY" > private_key && chmod 600 private_key
            ssh -i ${{ secrets.AWS_PRIVATE_KEY  }} ${USER_NAME}@${HOSTNAME} '
                cd /home &&
                git clone https://github.com/agiratech-mahesh/sahins.git
