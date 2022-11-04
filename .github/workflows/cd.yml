@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Deploy to Server 1
-        uses: easingthemes/ssh-deploy@main
+        uses: agiratech-mahesh/sahins@main
         env:
           SSH_PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
           REMOTE_HOST: ${{ secrets.HOSTNAME }}
