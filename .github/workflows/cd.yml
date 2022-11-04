@@ -23,5 +23,4 @@ jobs:
            ssh -o StrictHostKeyChecking=no -i private_key ${USER_NAME}@${HOSTNAME} '
                cd /home &&
                git clone https://github.com/agiratech-mahesh/sahins.git
-'
-
+            '
