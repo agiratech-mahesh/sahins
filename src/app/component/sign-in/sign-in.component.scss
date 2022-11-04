@@ -1,0 +1,21 @@
+::ng-deep{
+  .SignIn{
+  
+    &__withgoogle{
+      height: 50vh;
+        &_btn{
+          color: #757575;
+          display: flex;
+          padding: 1px;
+          font-family: "Roboto";
+        }   
+    }
+  }
+  theme--light .mat-flat-button, .theme--light .mat-raised-button, .theme--light .mat-fab, .theme--light .mat-mini-fab {
+    // color: rgba(0, 0, 0, 0.87);
+    color:#757575;
+    background-color: white;
+}
+
+  
+}

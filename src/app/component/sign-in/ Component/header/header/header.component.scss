@@ -1,0 +1,16 @@
+.header_toolbar{
+    background-image: linear-gradient(to right, #8f7fd0, #bdb4e1);
+    color: white;
+}
+.text{
+    width: 200%;
+}
+::ng-deep.mat-drawer-inner-container::-webkit-scrollbar {
+    display: none;
+}
+::ng-deep.mat-sidenav-container::-webkit-scrollbar {
+    display: none;
+}
+::ng-deep.mat-drawer-content::-webkit-scrollbar {
+     display:none; 
+}

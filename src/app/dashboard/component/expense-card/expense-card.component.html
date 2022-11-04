@@ -1,0 +1,84 @@
+<div class="body" fxLayout="row" fxLayoutAlign="center center" fxLayout.lt-sm="column" fxLayout.lt-md="column">
+    <div class="dashboard__container_card" fxLayout.lt-sm="column" fxLayout.lt-md="column" 
+        fxLayoutGap.lt-md="2px" fxLayoutAlign="center" fxFelx="100" fxFelx.lt-md="80" fxLayoutAlign.lt-sm="start"
+        fxLayoutGap="10px">
+        <mat-card class="dashboard__container_card-timecard" fxLayout="row" fxLayoutAlign="center center">
+            <mat-card class="newclass">
+                <div fxLayout="column">
+                    <h3 fxLayoutAlign="center center">This Month</h3>
+                    <canvas class="canvas" id="myChart"></canvas>
+
+                    <!-- <img class="dashboard__container_card-timecard-icon" src="../../../../assets/img/monyImg.png" /> -->
+                </div>
+                <div fxLayout="row">
+                    <div fxLayout="column">
+                        <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap.lt-sm="0px" fxLayoutGap="2px">
+                            <div fxLayout.lt-sm="row" fxLayoutAlign.lt-sm="center center">
+                                <h3 class="dashboard__container_card-timecard-content">Your&nbsp;Expense</h3>
+                                <p id="card-content-p" class="" fxLayoutAlign="center center"><b>173</b></p>
+                            </div>
+                            <div fxLayout.lt-sm="row" fxLayoutAlign.lt-sm="center center">
+                                <h3 class="dashboard__container_card-timecard-content">Total&nbsp;Expense</h3>
+                                <p id="card-content-p" fxLayoutAlign="center center" fxLayoutAlign.lt-sm="none none">
+                                    <b>173</b>
+                                </p>
+                            </div>
+                        </div>
+                        <hr class="dashboard__container_card-timecard-line">
+                        <div fxLayout="row" fxLayoutGap="25px" fxLayoutGap.lt-sm="0px" fxLayoutGap.lt-md="100px">
+                            <div>
+                                <p id="card-content-m"><b>100.00% Filled JUN mhourstimesheet</b></p>
+                            </div>
+                            <div>
+                                <p id="card-content-m"> <b>173/173</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </mat-card>
+        </mat-card>
+        <mat-card class="dashboard__container_card-timecard" fxLayout="row" fxLayoutAlign="center center">
+            <mat-card class="newclass">
+                <div fxLayout="column">
+                    <h3 fxLayoutAlign="center center">Last Month</h3>
+                    <canvas class="canvas" id="myChart2"></canvas>
+                    <!-- <img class="dashboard__container_card-timecard-icon" src="../../../../assets/img/monyImg.png" /> -->
+                </div>
+                <div fxLayout="row">
+                    <div fxLayout="column">
+                        <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap.lt-sm="0px" fxLayoutGap="2px">
+                            <div fxLayout.lt-sm="row" fxLayoutAlign.lt-sm="center center">
+                                <h3 class="dashboard__container_card-timecard-content">Your&nbsp;Expense</h3>
+                                <p id="card-content-p" class="" fxLayoutAlign="center center"><b>173</b></p>
+                            </div>
+                            <div fxLayout.lt-sm="row" fxLayoutAlign.lt-sm="center center">
+                                <h3 class="dashboard__container_card-timecard-content">Total&nbsp;Expense</h3>
+                                <p id="card-content-p" fxLayoutAlign="center center" fxLayoutAlign.lt-sm="none none">
+                                    <b>173</b>
+                                </p>
+                            </div>
+                        </div>
+                        <hr class="dashboard__container_card-timecard-line">
+                        <div fxLayout="row" fxLayoutGap="25px" fxLayoutGap.lt-sm="0px" fxLayoutGap.lt-md="100px">
+                            <div>
+                                <p id="card-content-m"><b>100.00% Filled JUN mhourstimesheet</b></p>
+                            </div>
+                            <div>
+                                <p id="card-content-m"> <b>173/173</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </mat-card>
+        </mat-card>
+        <div fxLayout="row">
+            <app-expense2-card></app-expense2-card>
+        </div>
+    </div>
+    <div fxLayoutAlign="end start" fxLayout>
+        <div class="vr"></div>
+        <div class="canvas2">
+            <canvas class="canvas2" id="myChart3"></canvas>
+        </div>
+    </div>
+</div>

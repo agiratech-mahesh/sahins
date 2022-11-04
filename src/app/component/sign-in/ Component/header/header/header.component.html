@@ -1,0 +1,28 @@
+<mat-toolbar class="header_toolbar">
+  <button mat-icon-button class="example-icon" (click)="toggleSidenav()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <h4>Expense </h4>
+  <div class="w-100 p-3" fxLayoutAlign="end">
+    <mat-icon>brightness_5</mat-icon>
+    <mat-slide-toggle [checked]="theme" (change)="toggleTheme()">
+    </mat-slide-toggle>
+    <mat-icon>bedtime</mat-icon>
+  </div>
+  <div>
+    <img src="{{userData.photoURL}}" class="rounded-circle" width="40" height="40">
+  </div>
+</mat-toolbar>
+<mat-sidenav-container >
+  <mat-sidenav #sidenav [opened]="isShowing" >
+        <mat-nav-list>
+          <!-- <a mat-list-item [routerLink]="['/dashBoard/attendance']"> Attendances </a>
+          <a mat-list-item [routerLink]="['/dashBoard']"> DashBoard </a> -->
+          <a mat-list-item  [routerLink]="''" (click)="afAuth.SignOut()"><mat-icon (click)="afAuth.SignOut">exit_to_app</mat-icon>Sign-out</a>
+        </mat-nav-list>
+      </mat-sidenav>
+  <mat-sidenav-content>
+    <h1 fxLayoutAlign="center center" class="">Welcome back {{userData.displayName}}..,</h1>
+    <router-outlet ></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
