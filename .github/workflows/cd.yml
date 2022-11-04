@@ -20,7 +20,7 @@ jobs:
 
         run: |
            echo "$PRIVATE_KEY" > private_key && chmod 600 private_key
-           ssh -i StrictHostKeyChecking=no private_key ${USER_NAME}@${HOSTNAME} '
+           ssh -i ${{ secrets.AWS_PRIVATE_KEY  }} ${USER_NAME}@${HOSTNAME} '
                cd /home &&
                git clone https://github.com/agiratech-mahesh/sahins.git
             '
